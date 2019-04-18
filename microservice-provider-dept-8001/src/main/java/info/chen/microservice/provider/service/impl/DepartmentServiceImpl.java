@@ -1,8 +1,8 @@
-package info.chen.microservice.service.impl;
+package info.chen.microservice.provider.service.impl;
 
-import info.chen.microservice.dao.DepartmentDao;
 import info.chen.microservice.entities.Department;
-import info.chen.microservice.service.DepartmentService;
+import info.chen.microservice.provider.dao.DepartmentDao;
+import info.chen.microservice.provider.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

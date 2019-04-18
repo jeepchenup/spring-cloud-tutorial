@@ -1,7 +1,7 @@
-package info.chen.microservice.controller;
+package info.chen.microservice.provider.controller;
 
 import info.chen.microservice.entities.Department;
-import info.chen.microservice.service.DepartmentService;
+import info.chen.microservice.provider.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +14,8 @@ public class DepartmentController {
     private DepartmentService service;
 
     @PostMapping("/dept/add")
-    public boolean addDept(Department department) {
+    public boolean addDept(@RequestBody Department department) {
+        System.out.println("provider : " + department);
         return service.add(department);
     }
 

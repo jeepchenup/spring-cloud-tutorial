@@ -1,4 +1,5 @@
-package info.chen.microservice.service;
+package info.chen.microservice.provider.service;
+
 
 import info.chen.microservice.entities.Department;
 

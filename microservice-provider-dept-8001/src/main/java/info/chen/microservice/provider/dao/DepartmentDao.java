@@ -1,4 +1,4 @@
-package info.chen.microservice.dao;
+package info.chen.microservice.provider.dao;
 
 import info.chen.microservice.entities.Department;
 import org.apache.ibatis.annotations.*;
