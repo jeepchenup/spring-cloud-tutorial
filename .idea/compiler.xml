@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="microservice-api" />
         <module name="microservice-consumer-dept-80" />
+        <module name="microservice-eureka" />
         <module name="microservice-provider-dept-8001" />
       </profile>
     </annotationProcessing>

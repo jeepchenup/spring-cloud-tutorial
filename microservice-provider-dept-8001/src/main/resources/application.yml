@@ -20,3 +20,12 @@ spring:
       max-wait-millis: 200 # 最大等待获取数据库连接时间毫秒
   application:
     name: microservice-department-provider
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: microservice-dept-8001
+    prefer-ip-address: true
+
+info:
