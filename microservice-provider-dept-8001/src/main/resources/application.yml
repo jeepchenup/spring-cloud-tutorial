@@ -23,7 +23,8 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:7001/eureka/
+#      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka-7001.com:7001/eureka/,http://eureka-7002.com:7002/eureka/,http://eureka-7003.com:7003/eureka/
   instance:
     instance-id: microservice-dept-8001
     prefer-ip-address: true

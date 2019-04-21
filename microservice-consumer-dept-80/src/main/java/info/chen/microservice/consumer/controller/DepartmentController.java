@@ -33,4 +33,9 @@ public class DepartmentController {
         System.out.println("consumer: " + department);
         return restTemplate.postForObject(dept_host + "/dept/add", department, Boolean.class);
     }
+
+    @GetMapping("/dept/discovery")
+    public Object discoveryService() {
+        return restTemplate.getForObject(dept_host + "/dept/discovery", Object.class);
+    }
 }
