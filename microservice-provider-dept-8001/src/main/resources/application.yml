@@ -29,3 +29,7 @@ eureka:
     prefer-ip-address: true
 
 info:
+  app.name: microservice-provider-dept
+  company.name: www.chen.info
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
