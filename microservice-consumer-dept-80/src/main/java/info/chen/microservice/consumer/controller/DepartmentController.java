@@ -13,7 +13,8 @@ import java.util.List;
 @RestController
 public class DepartmentController {
 
-    private static final String dept_host = "http://localhost:8001";
+//    private static final String dept_host = "http://localhost:8001";
+    private static final String dept_host = "http://MICROSERVICE-DEPARTMENT-PROVIDER";
 
     @Autowired
     private RestTemplate restTemplate;

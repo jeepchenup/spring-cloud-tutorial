@@ -1,0 +1,36 @@
+server:
+  port: 8003
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: info.chen.microservice.entities    # 所有Entity别名类所在包
+  mapper-locations:
+    - info.chen.microservice.dao.*
+#    - classpath:mybatis/mapper/**/*.xml
+spring:
+  datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/cloudDB03
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-idle: 5
+      max-wait-millis: 200 # 最大等待获取数据库连接时间毫秒
+  application:
+    name: microservice-department-provider
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka-7001.com:7001/eureka/,http://eureka-7002.com:7002/eureka/,http://eureka-7003.com:7003/eureka/
+  instance:
+    instance-id: microservice-dept-8003
+    prefer-ip-address: true
+
+info:
+  app.name: microservice-provider-dept
+  company.name: www.chen.info
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

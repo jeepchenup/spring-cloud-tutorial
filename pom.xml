@@ -14,6 +14,8 @@
         <module>microservice-eureka</module>
         <module>microservice-eureka1</module>
         <module>microservice-eureka2</module>
+        <module>microservice-provider-dept-8002</module>
+        <module>microservice-provider-dept-8003</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -12,6 +12,8 @@
         <module name="microservice-eureka1" />
         <module name="microservice-eureka2" />
         <module name="microservice-provider-dept-8001" />
+        <module name="microservice-provider-dept-8002" />
+        <module name="microservice-provider-dept-8003" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
