@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * @description
+ * @author      Edison Chen
+ * @date        2019-06-07
+ */
 @RestController
 public class DepartmentController {
 

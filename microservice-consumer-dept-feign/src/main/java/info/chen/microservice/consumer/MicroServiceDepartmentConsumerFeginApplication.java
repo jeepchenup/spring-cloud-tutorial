@@ -5,6 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
+/**
+ * @author Edison Chen
+ * @date   2019-06-07
+ */
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients(basePackages = {"info.chen.microservice"})

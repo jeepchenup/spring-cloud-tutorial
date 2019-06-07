@@ -14,7 +14,7 @@ public interface DeptServiceClient {
     @PostMapping("/dept/add")
     public boolean add(Department dept);
 
-    @GetMapping("/dept/get/{id}")
+    @GetMapping("/dept/{id}")
     public Department get(@PathVariable("id") Long id);
 
     @GetMapping("/dept/all")
