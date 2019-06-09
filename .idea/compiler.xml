@@ -15,6 +15,7 @@
         <module name="microservice-provider-dept-8001" />
         <module name="microservice-provider-dept-8002" />
         <module name="microservice-provider-dept-8003" />
+        <module name="microservice-provider-dept-hystrix-8001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
